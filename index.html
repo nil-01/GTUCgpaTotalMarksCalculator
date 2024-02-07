@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Calculate GTU Marks, and percentage with this handy calculator from your result. Get accurate results for your GTU performance.">
+    <meta name="keywords"
+        content="GTU, Marks Calculator,GTU Percentage Calculator , Convert CPI SPI CGPA into percentage for GTU , GTU Percentage calculator, GTU cgpa to percentage">
+    <meta name="author" content="Yash kotadiya , Nilesh Yadav">
+    <meta name="robots" content="index, follow">
+    <title>GTU Marks/Percentage Calculator</title>
+    <link rel="stylesheet" href="./gtuMarksPercentageStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="GtuCGPAcontainDiv">
+        <h1 class="text-center mt-3 text-decoration-underline">GTU MARKS AND PERCENTAGE CALCULATOR</h1>
+        <div class="gtu-container p-4">
+            <h5 class="text-center">Get total marks for GTU <br /> <span class="text-danger">Note :</span> For
+                percentage enter only CGPA or
+                CPI</h5>
+            <hr />
+            <div class="mb-3">
+                <label class="form-label">GTU CPI/CGPA</label>
+                <input type="number" class="form-control" id="CGPA" autocomplete="off"
+                    placeholder="Enter the GTU CPI/CGPA" min="0" max="10">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">GTU Total Earned Credit</label>
+                <input type="number" class="form-control" id="Earned_Credit" autocomplete="off"
+                    placeholder="Enter the GTU total earned credit" min="0">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">GTU Total Credit</label>
+                <input type="number" class="form-control" id="Total_Credit" autocomplete="off"
+                    placeholder="Enter the GTU total credit" min="0">
+            </div>
+            <div class="text-center mb-3 mt-3">
+                <button type="submit" class="btn btn-outline-info" onclick="GTU_TOTAL_MARKS_GETTER()">Get Total
+                    GTU Marks</button>
+                <button type="submit" class="btn btn-outline-secondary ms-2" onclick="GTU_GET_PERCENTAGE()">Get
+                    GTU Perecentage</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js"></script>
+    <script src="./gtuMarksPercentageScript.js"></script>
+</body>
+
+</html>
